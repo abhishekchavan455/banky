@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Account Registration Form</title>
+    <style>
+        .form-container {
+            width: 600px;
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+            border-radius: 10px;
+            padding: 40px 50px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: teal;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .input, .select {
+            border-radius: 20px;
+            border: 1px solid #c0c0c0;
+            padding: 10px 15px;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .form-btn {
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            background: teal;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .form-btn:hover {
+            background: #006d6d;
+        }
+        body 
+        {
+        font-family: Arial, sans-serif;
+        background:url("bank18.jpg");
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-size:cover;    
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <p class="title">Savings Account Registration</p>
+        <form class="form" action="account_opening_registration_form.jsp">
+            <input type="text" class="input" placeholder="Full Name" name="fname" required>
+            <input type="email" class="input" placeholder="Email ID" name="email" required>
+            <input type="tel" class="input" placeholder="Contact Number" name="contact" required>
+            <input type="date" class="input" placeholder="Date of Birth" name="date" required>
+            
+            <select class="select" name="gender" required>
+                <option value="" disabled selected>Gender</option>
+                <option value="male" >Male</option>
+                <option value="female" >Female</option>
+                <option value="other" >Other</option>
+            </select>
+            
+            <input type="text" class="input" placeholder="Permanent Address" name="address" required>
+            <input type="text" class="input" placeholder="City" name="city" required>
+            <input type="text" class="input" placeholder="State" name="state" required>
+            <input type="text" class="input" placeholder="PIN Code" name="pincode" required>
+            
+            <input type="text" class="input" placeholder="Occupation" name="occupation" required>
+            <input type="text" class="input" placeholder="Nationality" name="nationality" required>
+            
+            <select class="select" name="account_type" required>
+                <option value="" disabled selected>Select Account Type</option>
+                <option value="savings">Savings Account</option>
+                <option value="current">Current Account</option>
+                <option value="fixed-deposit">Fixed Deposit Account</option>
+            </select>
+
+            <select class="select" name="id" required>
+                <option value="" disabled selected>Identification Proof</option>
+                <option value="aadhaar">Aadhaar Card</option>
+                <option value="passport">Passport</option>
+                <option value="voter-id">Voter ID</option>
+                <option value="pan-card">PAN Card</option>
+                <option value="driving-license">Driving License</option>
+            </select>
+
+            <input type="text" class="input" placeholder="ID Proof Number" name="id_number" required>
+            
+            <input type="text" class="input" placeholder="Set Username" name="username" required>
+            <input type="password" class="input" placeholder="Set Password" name="password" required>
+            
+            <button type="submit" class="form-btn">Register</button>
+        </form>
+    </div>
+</body>
+</html>

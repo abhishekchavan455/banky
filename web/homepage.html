@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .my-class {
+            background: #21D192;
+        }
+        
+        .custom-image {
+            width: 700px;
+            height: 330px;
+        }
+        
+        .card {
+            height: fit-content;
+            width: fit-content;
+            border: none;
+        }
+        .footer-distributed{
+  background: #666;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  lightseagreen;
+  text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color:blue;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Banky</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Custmer Account 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="cash_withdraw_deposite_by_account_number.html">withdraw/deposite</a></li>  
+            <li><a class="dropdown-item" href="view_all_accounts.jsp">View Customer account Details</a></li>
+          </ul>
+        </li>
+      </ul>
+
+        
+        <button type="button" class="btn btn-primary"><a href="account_opening_registration_form.html" style="color:white;">New Account open</a></button>
+                    <div class="mx-2 align-item-right">
+                    <a href="admin_login.html"> <button type="button" class="btn btn-link">LOGOUT</button></a>
+                </div>
+    </div>
+  </div>
+</nav>
+    
+    
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="bank8.jpg" class="d-block w-100" alt="..." style="height:800px;">
+            </div>
+            <div class="carousel-item">
+                <img src="bank1.jpg" class="d-block w-100" alt="..." style="height:800px;">
+            </div>
+            <div class="carousel-item">
+                <img src="bank3.jpg" class="d-block w-100" alt="..." style="height:800px;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class=" card-title mt-3 ">Library Management Systems Comparison</h2>
+                        <p class="card-text mt-3 mb-2 ">
+                      Library management systems maintain vast collections of titles and resources. Products should offer easy-to-use interfaces with responsive support units that manage large inventories and curate customer experience.<br><br>
+
+While comparing different products, consider the library's inventory scale, asset circulation rate, and daily facility activities. The number of members, subscriptions, and locations are also key factors for selecting the proper system.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6 col-sm-12 ">
+                <div class="card">
+                    <div class="card-body">
+                        <div style="overflow: hidden; width: 100%; height: 100%; ">
+                            <img src="bank13.jpg" style="object-fit: cover; width: 100%; height: 100%; " class="custom-image rounded float-end " alt="... ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-class text-center" style="background-color: #666">
+        <div class="container mt-4 mb-4">
+            <div class="row mt-4">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-5">
+                    <h1 style="color: white;">Life Lessons to Learn from Books </h1>
+                </div>
+            </div>
+            <br>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <h4 style="color:white">The importance of books in our lives is not limited to the knowledge it provides us. Books also bring change in our personality, develop us into our better selves and give us lessons to cherish lifelong.</h4>
+            </div><br><br>
+        </div>
+    </div>
+    
+        <div class="container mt-5 mb-5">
+        <div class="row">
+
+            <div class="col-md-6 col-lg-6 col-sm-12 ">
+                <div class="card">
+                    <div class="card-body">
+                        <div style="overflow: hidden; width: 80%; height: 80%; ">
+                            <img src="bank5.jpg" style="object-fit: cover; width: 100%; height: 100%; " class="custom-image rounded float-end " alt="... ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class=" card-title mt-3 ">Books are Your Best Friend</h2>
+                        <p class="card-text mt-3 mb-2 ">
+                        One of the great reasons that signify the importance of book reading in our life is that books act as our best friends. Friends are one of the most important parts of our life. We can’t imagine our life without the companionship of a good friend.<br><br> Similarly, a book is like a best friend that constantly inspires us to become the best versions of ourselves. Books enrich our minds with knowledge just like a good friend. We can learn a lot from books and they can help us in overcoming our failures as well as shape our minds.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3>BAN<span>KY</span></h3>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.555.555.5555</p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+
+
+      </div>
+
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL " crossorigin="anonymous "></script>
+</body>
+</html>
